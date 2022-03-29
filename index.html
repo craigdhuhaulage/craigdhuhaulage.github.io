@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Craig Dhu Haulage Ltd</title>
+    <style>
+      .embedded{
+       width: 50vw; 
+       height: 10vw;
+       display: inline-block;
+       text-align: center;
+       margin-left: 24vw;
+
+      }
+      h1{
+       	font-size: 3.5vw; 
+      }
+      h2{
+       	font-size: 2.5vw; 
+      }
+      .contact{
+       	font-size: 1.5vw; 
+      }
+      .alignblock{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      }
+      .gallerygrid{
+       	display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-gap: 1vw;
+      }
+      #contact-header{
+       	color: rgb(0,104,173); 
+      }
+      #about-title{
+       	color: rgb(0,104,173); 
+      }
+      #title{
+       color: rgb(0, 104, 173) 
+      }
+      #footer{
+        display: flex;
+       	background-color: black;
+        height: 15vw;
+        align-items: center;
+        justify-content: center;
+      }
+      .abouttext{
+       	 font-size: 1.5vw;
+         font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+      }
+      .aboutpara{
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #bannerhead{
+       	  color: white;
+        	font-size: 4vw; 
+        	font-weight: 800;
+      }
+      #bannerpara{
+         color: white; 
+         font-size: 2.5vw;
+      }
+      .decorated{
+     overflow: hidden;
+     text-align: center;
+ }
+			.decorated > span{
+  		  position: relative;
+  		  display: inline-block;
+			}
+			.decorated > span:before, .decorated > span:after{
+   		 content: '';
+   		 position: absolute;
+    		top: 50%;
+   		 border-bottom: 2px solid;
+   		 width: 100vw;
+   		 margin: 0 20px;
+			}
+			.decorated > span:before{
+   		 right: 100%;
+			}
+			.decorated > span:after{
+    		left: 100%;
+			}
+      .abouttext1{
+       	grid-area: abouttext1; 
+        
+      }
+      .abouttext2{
+       	grid-area: abouttext2; 
+      }
+      .abouttext3{
+       	grid-area: abouttext3; 
+      }
+      .aboutimg1{
+       	grid-area: aboutimg1; 
+      }
+      .aboutimg2{
+       	grid-area: aboutimg2; 
+      }
+      .aboutimg3{
+       	grid-area: aboutimg3; 
+      }
+      a{
+       display: block;
+       width: 100%;
+      }
+      html,body{
+       	padding: 0;
+        margin: 0;
+      }
+      h1,h2,h3,p{
+       text-align: center; 
+      }
+      h3{
+       word-wrap: normal; 
+       color: rgb(0,104,173);
+       font-size: 2vw;
+      }
+      h1,h2,h3{
+       font-family: 'Archivo Black', arial, sans-serif;
+      }
+      
+      .halfwidth{
+       	width: 50%; 
+      }
+			.flex{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .fullwide{
+       	width: inherit;
+      }
+      .aboutgrid{
+        display: grid;
+       	grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 5vw;
+        grid-gap: 3vw;
+        grid-template-areas:
+         	"aboutimg1 abouttext1"
+          "abouttext2 aboutimg3"
+          "aboutimg2 abouttext3"
+      }
+      #banner-text{
+        background-color: rgb(0, 104, 173);
+        display: inline-block;
+        padding-right: 2%;
+        width: 46%;
+        padding-left: 2%;
+      }
+      
+      @media screen and (max-width: 900px),(orientation: portrait){
+        .embedded{
+					height: 20vw;
+        }
+        .gallerygrid{
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        }
+        h1{
+         	font-size: 7vw; 
+        }
+        h2{
+         font-size: 5vw; 
+        }
+        .abouttext{
+         font-size: 3vw; 
+        }
+        #banner-image{
+          width: 100%;
+        }
+        #banner-text{
+         	width: 100%; 
+          height: 64.58vw;
+        }
+        #bannerhead{
+         	font-size: 7vw; 
+        }
+        #bannerpara{
+         	font-size: 5vw; 
+        }
+        h3{
+         font-size: 4vw; 
+        }
+        .aboutgrid{
+         display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto auto auto auto;
+          grid-template-areas:
+            "aboutimg1"
+            "abouttext1"
+            "aboutimg2"
+            "abouttext2"
+            "aboutimg3"
+            "abouttext3"
+        }
+      	.contact{
+         	font-size: 3vw; 
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(0,104,173)">Craig Dhu Haulage Ltd</h1>
+    </header>
+    <section class="flex"> <img src="images/truck.webp" id="banner-image" alt=""
+
+        height="auto" width="50%">
+      <article id="banner-text">
+        <h2 id="bannerhead">WELCOME TO CRAIG DHU HAULAGE LTD </h2>
+        <p id="bannerpara"> MC 920473<br>
+          DOT 2641273<br>
+          <br>
+          <br>
+          <b>Simon (204) 355-8416</b> </p>
+      </article>
+    </section>
+    <main>
+      <section id="about-us">
+        <header style="margin: 5vw;">
+          <h2 id="about-title" class="decorated"><span>ABOUT US</span> </h2>
+        </header>
+        <div class="aboutgrid">
+          <div class="aboutimg1 alignblock"> <img src="images/truck2.webp" alt=""
+
+              height="auto" width="100%"> </div>
+          <article class="abouttext1 aboutpara">
+            <h3> Craig Dhu Haulage </h3>
+            <p class="abouttext"> We give the service the competition can only
+              talk about. How? When you call, you talk directly with the driver
+              every time to discuss the particulars and needs of your load from
+              pickup to delivery. Know your precious cargo is in the hands of a
+              highly experienced driver every time. </p>
+          </article>
+          <article class="abouttext2 aboutpara">
+            <h3> Can We Haul Your Load? </h3>
+            <p class="abouttext"> If your freight fits in a standard 53' dry van
+              then yes we can pick up and deliver your freight, LTL, or full
+              load. We can haul from 47 states in the US (not California) to
+              anywhere in Canada, from Canada to elsewhere in Canada, or from
+              Canada to the US. We also have a new food grade max cube drive
+              van, with 101" inside loading possible. Give us a call or send us
+              an email. We look forward to helping you serve your customers
+              better. </p>
+          </article>
+          <div class="aboutimg2 alignblock"> <img src="images/packsquare.webp"
+
+              style="; margin-left: 10%;" alt="" height="auto" width="80%"> </div>
+          <div class="aboutimg3 alignblock"> <img src="images/sideviewwide.webp"
+
+              alt="" height="auto" width="100%"> </div>
+          <article class="abouttext3 aboutpara">
+            <h3> Why Should We Trust Craig Dhu Haulage With Our Freight? </h3>
+            <p class="abouttext"> Craig Dhu Haulage is a small company 1 truck
+              and 1 trailer. We want the load that means the most to you and to
+              your customer and must get to where it's going on time. I have
+              been in the transportation industry delivering freight for over 25
+              years, if it can be done we can do it. If we can't we will tell
+              you. I carry a plethora of equipment in the trailers and know how
+              to use them for securement and unloading aids. Our equipment is
+              very well maintained and reliable. I specialize in on time,
+              on-site driver assist deliveries; since July 2015 we have
+              successfully picked up and delivered more than 600 loads on time
+              and damage free. </p>
+          </article>
+        </div>
+      </section>
+      <section id="contact-us">
+        <h2 id="contact-header" class="decorated" style="margin: 5vw;"><span>CONTACT
+            US</span></h2>
+        <article id="contact-text" style="margin-bottom: 50px;">
+          <h3> Craig Dhu Haulage ltd </h3>
+	  <a href="mailto:simon@craigdhuhaulage.com" align="middle">
+          <p class="contact"> simon@craigdhuhaulage.com </p>
+	  </a>
+          <a href="tel:2043558416" align="middle">
+            <p class="contact"> (204) 355-8416 </p>
+          </a>
+          <h3> Hours </h3>
+          <p class="contact"> Mon - Sat 0700-2000 </p>
+          <h3> Where am I? </h3>
+          <div class="embedded"> <iframe src="loaded.html" scrolling="no" style=""
+
+              height="100%" frameborder="0" width="100%"></iframe> </div>
+        </article>
+      </section>
+      <section id="gallery" style="background-color: rgb(0,104,173); padding: 1vw;">
+        <h2 style="color: white;"> Photo Gallery </h2>
+        <article class="gallerygrid">
+          <div class="alignblock"> <a href="images/1.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/1.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/2.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/2.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/3.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/3.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/4.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/4.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/5.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/5.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/6.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/6.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/7.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/7.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/8.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/8.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/9.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/9.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/10.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/10.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/11.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/11.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/12.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/12.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/29.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/29.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/30.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/30.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/15.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/15.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/16.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/16.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/17.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/17.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/18.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/18.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/19.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/19.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/20.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/20.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/21.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/21.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/22.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/22.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/28.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/28.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/24.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/24.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/25.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/25.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/26.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/26.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/27.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/27.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/23.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/23.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/13.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/13.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+          <div class="alignblock"> <a href="images/14.webp" target="_blank" rel="noopener noreferrer">
+              <img src="images/14.webp" alt="" height="auto" width="100%"> </a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer id="footer" title="Copyright">
+      <p style="color:gray; font-size: 2vw;"> Copyright © 2021 Craig Dhu Haulage
+        ltd - All Rights Reserved </p>
+    </footer>
+  </body>
+</html>
